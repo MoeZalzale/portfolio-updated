@@ -11,9 +11,9 @@ module.exports = {
       'main': ['Ubuntu','sans-serif']
     },
   backgroundImage:{
-    'mainbg':"url('../public/mainbg3.jpg')",
-    'rick':"url('../public/rick.jpg')",
-    'morty':"url('../public/morty.png')"
+    'mainbg':"url('/mainbg3.jpg')",
+    'rick':"url('/rick.jpg')",
+    'morty':"url('/morty.png')"
 
 
   }
