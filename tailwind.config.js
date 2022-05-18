@@ -4,7 +4,21 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    colors:{
+      'background': '#a8a29e'
+    },
+    extend: { fontFamily:{
+      'main': ['Ubuntu','sans-serif']
+    },
+  backgroundImage:{
+    'mainbg':"url('../public/mainbg3.jpg')",
+    'rick':"url('../public/rick.jpg')",
+    'morty':"url('../public/morty.png')"
+
+
+  }
+  
+  },
   },
   plugins: [],
 }
