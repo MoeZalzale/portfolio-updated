@@ -24,8 +24,8 @@ function Main() {
     return (
     <div className='min-h-screen flex flex-col items-center bg-mainbg bg-cover'>
         <Header/>
-        <div className='w-full pt-[20rem] items-center justify-center flex flex-col'>
-        <motion.h1 className='text-[100px] drop-shadow-xl'
+        <div className='w-full pt-5 md:pt-[10rem] items-center justify-center flex flex-col'>
+        <motion.h1 className='text-[20px] md:text-[100px] drop-shadow-xl'
         initial ={{y:500}}
         animate = {first}
         >Moe Zalzale</motion.h1>

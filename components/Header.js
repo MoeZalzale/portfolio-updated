@@ -10,7 +10,7 @@ const Header = () => {
         initial ={{y:-100,opacity:0}}
          animate={isDone&&{y:0,opacity:1}}
          transition={{type: 'spring', duration:1}}
-         className='w-full'
+         className='w-full hidden md:inline'
 
         >
         <div className='flex max-w-7xl mx-auto items-center justify-around text-4xl pt-5'>

@@ -10,6 +10,8 @@ const Contact = () => {
 
     const [errors,setErrors]=useState([])
 
+    const [messageSent,setSent]= useState(false)
+
 
     const handleSubmit = async (e) =>{
 e.preventDefault()
@@ -20,6 +22,7 @@ console.log(errors)
 
 if (valid)
 {
+setSent(true)
 await fetch('/api/email',{body: JSON.stringify({
     name: name,
     email: email,
@@ -30,6 +33,7 @@ method: 'POST',
     "Content-Type": "application/json",
   }
 })
+
 }
 }
 
@@ -76,14 +80,14 @@ return isValid
 
       
 
-            <form onSubmit={handleSubmit} className=' text-2xl relative shadow-xl rounded flex flex-col bg-background h-[45vh] w-[20vw] items-center justify-around' >
+            <form onSubmit={handleSubmit} className=' text-2xl relative shadow-xl rounded flex flex-col bg-background h-[70vh] md:h-[45vh] w-[70vw] md:w-[20vw] items-center justify-around' >
                 <h1 className='text-3xl'>Send me a message!</h1>
 
             <TextField variant='standard' className='w-[calc(100%-40px)]' error={errors.includes('name')} label={errors.includes('name') ?  'Name - please include your name': 'Name'} onChange={(e)=>setName(e.target.value)}/>
             <TextField variant='standard' className='w-[calc(100%-40px)]' label='Email' onChange={(e)=>setEmail(e.target.value)}/>
             <TextField variant='standard' className='w-[calc(100%-40px)]' error={errors.includes('subject')} label={errors.includes('subject') ?  'Subject - please include a subject': 'Subject'}  onChange={(e)=>setSubject(e.target.value)}/>
             <TextField rows={6} multiline className='w-[calc(100%-40px)]' error={errors.includes('message')} label={errors.includes('message') ?  'Message - please include a message': 'Message'}  onChange={(e)=>setMessage(e.target.value)}/>
-            <button type='submit' className=' w-full bg-[rgb(3,161,252)] h-10 mt-5'>Submit</button>
+            <button type='submit' disabled={messageSent} style={{backgroundColor: messageSent ? 'rgb(37, 207, 14)' : 'rgb(3,161,252)'}} className=' w-full bg-[rgb(3,161,252)] h-10 mt-5'>{messageSent?'Sent':"Submit"} </button>
         
             </form>
 

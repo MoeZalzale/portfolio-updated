@@ -37,12 +37,12 @@ const Projects = ({first, title, desc, pictures, speed, link}) => {
        
        
             
-        {first && <motion.h1 className='text-[white] text-8xl absolute top-5 left-10'>Projects</motion.h1>}
+        {first && <motion.h1 className='text-[white] text-6xl md:text-8xl absolute top-5 left-10'>Projects</motion.h1>}
             
                 <div className='flex flex-col flex-[0.4] items-center justify-center z-10'>
-                    <motion.div className='flex flex-col text-8xl text-[white]'> 
+                    <motion.div className='text-4xl flex flex-col mt-20 md:text-8xl text-[white]'> 
                     {title.map((word,i)=>
-                <motion.span  style={{position:'relative', left:`${i*5}rem`}}variants={title_variant} initial="initial" animate='animate' custom={i}>{word}</motion.span>
+                <motion.span  style={{position:'relative', left:`${i*2}rem`}}variants={title_variant} initial="initial" animate='animate' custom={i}>{word}</motion.span>
                     
 
                     )}
@@ -51,7 +51,7 @@ const Projects = ({first, title, desc, pictures, speed, link}) => {
                     // <motion.span  variants={title_variant} initial="initial" animate='animate' custom={3}className='relative left-40 '>API</motion.span> */}
                     </motion.div>
 
-                    <div className='flex flex-col border-x-2 border-b-2 rounded max-w-sm p-5 text-xl'>
+                    <div className=' w-[calc(100vw-50px)] flex border-x-2 border-b-2 rounded max-w-screen p-5 text-xl md:max-w-sm'>
                 <span>{desc} </span>
 
 
@@ -59,7 +59,7 @@ const Projects = ({first, title, desc, pictures, speed, link}) => {
                     </div>
             
                 <Link href={link}>
-                <div className=' relative flex-[0.6] h-full cursor-pointer'>
+                <div className=' hidden md:inline relative flex-[0.6] h-full cursor-pointer'>
                         {pictures.map((pic,i) =>
                           
                             <ParallaxLayer style={{ left:`${i*10}rem`,top:0}}  speed={speed[i]}>
