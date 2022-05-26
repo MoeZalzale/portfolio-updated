@@ -24,14 +24,14 @@ function Main() {
     return (
     <div className='min-h-screen flex flex-col items-center bg-mainbg bg-cover bg-top'>
         <Header/>
-        <div className='w-full pt-5 md:pt-[10rem] items-center justify-center flex flex-col'>
-        <motion.h1 className='text-[20px] lg:text-7xl  drop-shadow-xl'
+        <div className='w-full pt-5 md:pt-[15vh] items-center justify-center flex flex-col'>
+        <motion.h1 className='text-[20px] lg:text-[4vw]  drop-shadow-xl'
         initial ={{y:500}}
         animate = {first}
         >Moe Zalzale</motion.h1>
 
         {isDone&& 
-        <motion.p className='max-w-2xl mt-10 p-5 rounded border-b-2 border-x-2 text-xl overflow-hidden'
+        <motion.p className='max-w-2xl mt-5 p-5 rounded border-b-2 border-x-2 text-xl  overflow-hidden'
         initial={{y:-100,opacity:0}}
         animate={{y:0,opacity:1}}
         transition ={{type:'spring',duration:2}}

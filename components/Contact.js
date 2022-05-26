@@ -80,8 +80,8 @@ return isValid
 
       
 
-            <form onSubmit={handleSubmit} className=' text-2xl relative shadow-xl rounded flex flex-col bg-background h-[70vh] md:h-[45vh] w-[70vw] md:w-[20vw] items-center justify-around' >
-                <h1 className='text-3xl'>Send me a message!</h1>
+            <form onSubmit={handleSubmit} className=' text-2xl relative shadow-xl rounded flex flex-col bg-background h-[70vh]  w-[70vw] md:w-[30vw] items-center justify-around' >
+                <h1 className='text-[80%]'>Send me a message!</h1>
 
             <TextField variant='standard' className='w-[calc(100%-40px)]' error={errors.includes('name')} label={errors.includes('name') ?  'Name - please include your name': 'Name'} onChange={(e)=>setName(e.target.value)}/>
             <TextField variant='standard' className='w-[calc(100%-40px)]' label='Email' onChange={(e)=>setEmail(e.target.value)}/>
