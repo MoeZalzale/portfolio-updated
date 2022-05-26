@@ -27,7 +27,7 @@ const variant =  {
             
 
             <h1 className='absolute top-5 left-10 m-auto text-[white] text-4xl lg:text-[4vw]'>Skills</h1>
-            <img src='/CHALKBOARD.png' className='absolute left-[2rem] w-[20rem] bottom-[20rem] md:bottom-1  lg:w-[30vw] lg:left-[5rem] xl:w-[30rem]' ></img>
+            <img src='/CHALKBOARD.png' className='absolute left-[2rem] w-[20rem] bottom-[20rem] md:bottom-1  md:w-[30vw]' ></img>
 
             <div className='p-10 hidden relative top-0 md:flex md:flex-col md:justify-around md:h-[40%]'>
 
