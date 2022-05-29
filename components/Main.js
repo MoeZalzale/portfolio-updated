@@ -35,7 +35,7 @@ function Main() {
         initial={{y:-100,opacity:0}}
         animate={{y:0,opacity:1}}
         transition ={{type:'spring',duration:2}}
-        >Welcome to my portfolio! I am a software developer from Ottawa,Ontario and i specialize in Reactjs. I love to create apps on my free time and learn new things, I am currently learning Nextjs, Redux and Framer-motion. </motion.p>}
+        >Welcome to my portfolio! I am a software developer from Ottawa, Ontario and i specialize in Reactjs. I am currently seeking full-time position in full-stack or front-end development. </motion.p>}
         </div>
     </div>
     )

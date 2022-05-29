@@ -76,7 +76,7 @@ return isValid
 
     return (
         <div className='flex flex-col h-screen bg-[white] relative items-center justify-center bg-morty bg-cover'> 
-            <h1 className='text-6xl absolute top-5 left-5 text-[white]'>Contact Me</h1>
+            <h1 className='text-4xl lg:text-[4vw] absolute top-5 left-5 text-[white]'>Contact Me</h1>
 
       
 

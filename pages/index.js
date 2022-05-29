@@ -22,7 +22,7 @@ const Home = () => {
       first
       title = {['Twitch', 'Clip','Api']}
       desc = 'A full stack application which uses a Django server to fetch popular clips from a streaming platform to clearly display them to the user using React.'
-      speed={[-0.07,-0.4]}
+      speed={[-0.07,-0.5]}
       link='https://github.com/MoeZalzale'
       pictures = {["/ex1.PNG","/ex2.PNG"]}
       />
