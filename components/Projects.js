@@ -39,10 +39,10 @@ const Projects = ({first, title, desc, pictures, speed, link}) => {
             
         {first && <motion.h1 className='text-[white] text-4xl lg:text-[4vw] absolute top-5 left-10'>Projects</motion.h1>}
             
-                <div className='flex flex-col flex-[0.4] items-center justify-center z-10'>
+                <div className='flex flex-col flex-[0.4] items-center justify-center z-10 px-5'>
                     <motion.div className='text-4xl flex flex-col mt-20 lg:text-6xl text-[white]'> 
                     {title.map((word,i)=>
-                <motion.span  style={{position:'relative', left:`${i*2}rem`}}variants={title_variant} initial="initial" animate='animate' custom={i} className='text-4xl lg:text-[4vw] lg:p-[2vh]'>{word}</motion.span>
+                <motion.span  style={{position:'relative', left:`${i*2}rem`}}variants={title_variant} initial="initial" animate='animate' custom={i} className='text-4xl lg:text-6xl xl:text-[4vw] '>{word}</motion.span>
                     
 
                     )}
@@ -59,7 +59,7 @@ const Projects = ({first, title, desc, pictures, speed, link}) => {
                     </div>
             
                 <Link href={link}>
-                <div className=' hidden lg:flex justify-center items-center relative flex-[0.6] h-full cursor-pointer p-5 '>
+                <div className=' hidden lg:flex justify-center items-center relative flex-[0.6] h-full cursor-pointer '>
                         {pictures.map((pic,i) =>
                           
                             <ParallaxLayer style={{ left:`${i*5}rem`,top:0}}  speed={speed[i]}>
