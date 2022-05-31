@@ -24,7 +24,7 @@ function Main() {
     return (
     <div className='min-h-screen flex flex-col items-center bg-mainbg bg-cover bg-top'>
         <Header/>
-        <div className='w-full pt-5 md:pt-[15vh] items-center justify-center flex flex-col'>
+        <div className='w-full pt-5 md:pt-[15vh] items-center justify-center flex flex-col px-5'>
         <motion.h1 className='text-[20px] lg:text-[4vw]  drop-shadow-xl'
         initial ={{y:500}}
         animate = {first}
