@@ -13,6 +13,20 @@ const Home = () => {
   return (
     
     <div className='font-main'> 
+    <Head>
+      <title>Moe Zalzale</title>
+      <meta name="description" content="Moes Porfolio" />
+      <meta name="title" property="og:title" content="Moe Zalzale" />
+      <meta property="og:type" content="Website" />
+      <meta name="image" property="og:image" content="/head.PNG" />
+      <meta name="description" property="og:description" content="Moes Portfolio" />
+      <meta name="author" content="Moe Zalzale" />
+
+
+    </Head>
+
+
+
    <Parallax >
       <Main/>
       
