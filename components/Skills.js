@@ -34,7 +34,7 @@ const variant =  {
             <motion.img variants={variant}  animate='animate' custom={1} src='/react.png' width='75rem' ></motion.img>
             <motion.img variants={variant} animate='animate' custom={2} src='/redux.png' width='75rem' ></motion.img>
             <motion.img  variants={variant} animate="animate" custom={3} src='/ts.png' width='65rem' ></motion.img>
-            <motion.img  variants={variant} animate="animate" custom={4} src='/tw.png' height='75rem' width='75rem' ></motion.img>
+            <motion.img  variants={variant} animate="animate" custom={4} src='/GQL.png' height='75rem' width='75rem' ></motion.img>
             <motion.img  variants={variant} animate="animate" custom={5} src='/python.png' width='150rem' ></motion.img>
 
             </div>
