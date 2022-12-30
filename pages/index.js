@@ -42,11 +42,11 @@ const Home = () => {
       />
 
     <Projects
-      title = {['COVID', 'Tracker']}
-      desc = 'A single page react app that tracks covid cases across the provinces of Canada'
+      title = {['Calendar', 'Facts']}
+      desc = "A single page react app that displays facts based on the date picked, user can also 'like' a fact and add it to a list."
       speed={[-0.12]}
-      link='https://covid-tracker-7baa4.web.app/'
-      pictures={["/covid.PNG"]}
+      link='https://calendar-facts.vercel.app/'
+      pictures={["/calendar.PNG"]}
       />
 
     <Projects

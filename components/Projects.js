@@ -46,9 +46,7 @@ const Projects = ({first, title, desc, pictures, speed, link}) => {
                     
 
                     )}
-                    {/* // <motion.span  variants={title_variant} initial="initial" animate='animate' custom={1}>Twitch</motion.span>
-                    // <motion.span  variants={title_variant} initial="initial" animate='animate' custom={2} className='relative left-20 py-3'>Clip</motion.span>
-                    // <motion.span  variants={title_variant} initial="initial" animate='animate' custom={3}className='relative left-40 '>API</motion.span> */}
+                    
                     </motion.div>
 
                     <div className=' w-[calc(100vw-50px)] flex border-x-2 border-b-2 rounded max-w-screen p-5 text-xl md:max-w-sm'>
