@@ -50,11 +50,11 @@ const Home = () => {
       />
 
     <Projects
-      title = {['Password',"Wordlist",'Generator']}
-      desc = 'A Python web application which generates a list of passwords based on the word submitted by the user'
+      title = {['eCommerce',"Store"]}
+      desc = 'A React application that allows the user to search and add items to their cart. Each item is associated to a seller through a relational database and fetched using GraphQL. '
       speed={[-0.06]}
-      link ='http://moezalzale.pythonanywhere.com/'
-      pictures={["/password.PNG"]}
+      link ='https://ecommerce-moezalzale.vercel.app/'
+      pictures={["/ecommerce.png"]}
       />
 
       <Skills/>
